@@ -6,9 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://github.com/wouterboomsma/eigency/archive/refs/tags/{{ version }}.tar.gz
-  url : https://github.com/fbordeu/eigency/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f6e75e06715980876085b84e5be69f193d2fb35f39cacd614b195d7660ec390a
+  url: https://github.com/eigency-org/eigency/archive/refs/tags/{{ version }}.tar.gz
+  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+
 
 build:
   script_env:
