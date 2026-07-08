@@ -1,13 +1,14 @@
 {% set name = "eigency" %}
-{% set version = "3.4.0.7" %}
+{% set version = "5.0.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/wouterboomsma/eigency/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 075bda7a68e61f7884124cecd9b525c87b979fa49f9878cb9d88f787496bd81a
+  #url: https://github.com/wouterboomsma/eigency/archive/refs/tags/{{ version }}.tar.gz
+  url : https://github.com/fbordeu/eigency/archive/refs/tags/{{ version }}.tar.gz
+  sha256: f6e75e06715980876085b84e5be69f193d2fb35f39cacd614b195d7660ec390a
 
 build:
   script_env:
@@ -31,7 +32,7 @@ requirements:
     - setuptools-scm >=6.4.0
     - cython
     - numpy
-    - eigen >=3.2,<4
+    - eigen =5.0.1
   run:
     - python
 
